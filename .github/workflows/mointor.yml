@@ -1,0 +1,20 @@
+name: Monitor Static Site Uptime
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Every 30 minutes
+  workflow_dispatch:        # Manual trigger
+
+jobs:
+  uptime-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if site is live
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://madhankumar-2131.github.io/ecommerce-ci-cd-monitoring/)
+          echo "Status Code: $STATUS"
+          if [ "$STATUS" -ne 200 ]; then
+            echo "Site is down!"
+            exit 1
+          fi
