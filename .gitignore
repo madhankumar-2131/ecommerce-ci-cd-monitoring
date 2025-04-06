@@ -1,0 +1,2 @@
+# Ignore Terraform secrets
+terraform/secrets.tfvars
