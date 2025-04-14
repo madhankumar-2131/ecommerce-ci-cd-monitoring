@@ -1,4 +1,4 @@
-name: Deploy Static Site
+name: Deploy E-commerce Static Site
 
 on:
   push:
@@ -8,25 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout source
+      - name: Checkout repo
         uses: actions/checkout@v3
-
-      - name: Setup Node.js (optional if you have build steps)
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
-      # If you're building (e.g., npm run build), you can add it here
-      # - name: Install dependencies
-      #   run: npm install
-
-      # - name: Build project
-      #   run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # or ./dist or ./build if you build the site
+          publish_dir: ./static-site
