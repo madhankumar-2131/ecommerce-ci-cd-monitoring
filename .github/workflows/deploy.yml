@@ -16,4 +16,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3  # Using the peaceiris GitHub Actions to deploy to GitHub Pages
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # Using the GitHub token to authenticate deployment
-          publish_dir: ./static-site  # Directory containing your static files (index.html, css, js, etc.)
+          publish_dir: ./static-site  # Directory containing your static files (index.html, css, js, etc.
+          
