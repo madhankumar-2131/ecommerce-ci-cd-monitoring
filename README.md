@@ -2,7 +2,7 @@
 
 A **simple E-commerce web application** built using **Python Flask** and HTML/CSS, with real-time monitoring via **Prometheus + Grafana**, and deployed automatically to **GitHub Pages** using **GitHub Actions CI/CD pipeline**.
 
-> 🚀 Impress your DevOps interviewer with clean CI/CD, metrics exposure, and modern DevOps stack (even without cloud hosting).
+> 🚀
 
 ---
 
@@ -11,6 +11,9 @@ A **simple E-commerce web application** built using **Python Flask** and HTML/CS
 🔗 [Click here to view the live site](https://madhankumar-2131.github.io/ecommerce-ci-cd-monitoring/)
 
 ---
+
+## 📁 Clean folder structure and beginner-friendly setup
+![file](https://github.com/user-attachments/assets/4a873026-64ea-4c06-bfbf-044fa734c16e)
 
 ## 📌 Features
 
@@ -24,7 +27,7 @@ A **simple E-commerce web application** built using **Python Flask** and HTML/CS
 ---
 
 
-### 🔍 What is Prometheus?
+### 🔍 Prometheus
 
 Prometheus is an **open-source monitoring system** used to collect and store time-series data by scraping metrics from applications.
 
@@ -34,6 +37,8 @@ Prometheus is an **open-source monitoring system** used to collect and store tim
 - **Time-series database** – Stores historical data with timestamps for analysis
 
 #### 📌 In this project:
+![promothes](https://github.com/user-attachments/assets/1c7e3da0-15f3-43b8-9fef-64e83e2be154)
+
 - Your Flask app exposes a `/metrics` route
 - Prometheus is configured to **scrape** that endpoint periodically
 - You can track custom metrics like:
@@ -42,7 +47,7 @@ Prometheus is an **open-source monitoring system** used to collect and store tim
 
 
 
-### 📈 What is Grafana?
+### 📈Grafana
 
 Grafana is an analytics and visualization tool used to create interactive dashboards.
 
@@ -50,11 +55,21 @@ Grafana is an analytics and visualization tool used to create interactive dashbo
 ✅ Visualizes data using charts, graphs, alerts  
 ✅ Great for project dashboards, especially for `/metrics` data  
 
-🧠 In this project, only **project-specific metrics** are monitored — like HTTP request count, not system-level metrics (like CPU or memory).
 
----
+🧠 In this project, only **project-specific metrics** are monitored — like HTTP request count, not system-level metrics (like CPU or memory).
+![grafana1](https://github.com/user-attachments/assets/3e850205-1de9-4837-81b5-754d5fe4cee7)
+
+---![Screenshot (136)](https://github.com/user-attachments/assets/d3a966cf-4194-4a70-bde5-2d49e6b5d16b)
+![Screenshot (135)](https://github.com/user-attachments/assets/a58bbeb9-9302-4f04-a4f9-01a76a4a3235)
+
+
+![Screenshot (134)](https://github.com/user-attachments/assets/2d1847c2-4066-4738-bb77-aed0c12f1f8a)
+
+
 
 ## 🧪 Run Locally (Flask Monitoring)
+
+![img](https://github.com/user-attachments/assets/5babe622-b1c4-45fc-be06-309171a1b554)
 
 ```bash
 git clone https://github.com/madhankumar-2131/ecommerce-ci-cd-monitoring.git
